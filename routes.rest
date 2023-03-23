@@ -1,0 +1,6 @@
+//LOCALHOST DEPLOY
+//-----------------
+### GET ALL CONTACTS
+GET http://localhost:8080/travel HTTP/1.1
+### GET CONTACT BY ID
+GET http://localhost:8080/travel/641cb7213dd722d614c6d6e3 HTTP/1.1
