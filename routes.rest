@@ -21,8 +21,8 @@ GET http://localhost:8080/travel/america/641ceb4399cad3981cbf0c39 HTTP/1.1
 
 // --------------AFRICA COLLECTION -------------------
 
-
-
+### GET PLACE TO TRAVEL BY ID
+GET http://localhost:8080/travel/africa/641d10ee99cad3981cbf0c45 HTTP/1.1
 // --------------EUROPE COLLECTION ------------------
 
 ### GET PLACE TO TRAVEL BY ID
