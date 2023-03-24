@@ -49,8 +49,9 @@ const getAsiaPlace = async (req, res, next) => {
 
 
 //AMERICA ROUTES
+
 //GET place to visit by id
-//GET PLACE TO VISIT BY ID ASIA COLLECTION
+
 const getAmericaPlace = async (req, res, next) => {
   if (ObjectId.isValid(req.id)) 
   {return res.status(400).send("Invalid object id");}
@@ -66,4 +67,65 @@ const getAmericaPlace = async (req, res, next) => {
     console.log(result);
   });
 }
-module.exports = { getAll, getSingle, getAsiaPlace, getAmericaPlace };
+
+//AFRICA ROUTES
+
+//GET place to visit by id
+
+const getAfricaPlace = async (req, res, next) => {
+  if (ObjectId.isValid(req.id)) 
+  {return res.status(400).send("Invalid object id");}
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDb()
+    .db('TravelWish')
+    .collection('africa')
+    .find({ _id: userId });
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists[0]);
+    console.log(result);
+  });
+}
+
+//EUROPE ROUTES
+
+//GET place to visit by id
+const getEuropePlace = async (req, res, next) => {
+  if (ObjectId.isValid(req.id)) 
+  {return res.status(400).send("Invalid object id");}
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDb()
+    .db('TravelWish')
+    .collection('europe')
+    .find({ _id: userId });
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists[0]);
+    console.log(result);
+  });
+}
+
+//OCEANIA ROUTES
+
+//GET place to visit by id
+const getOceaniaPlace = async (req, res, next) => {
+  if (ObjectId.isValid(req.id)) 
+  {return res.status(400).send("Invalid object id");}
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDb()
+    .db('TravelWish')
+    .collection('oceania')
+    .find({ _id: userId });
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists[0]);
+    console.log(result);
+  });
+}
+
+
+
+module.exports = { getAll, getSingle, getAsiaPlace, getAmericaPlace, getEuropePlace, getAfricaPlace, getOceaniaPlace };
