@@ -31,3 +31,6 @@ GET http://localhost:8080/travel/europe/641d0b5799cad3981cbf0c41 HTTP/1.1
 
 
 // --------------OCEANIA COLLECTION-------------------
+
+### GET PLACE TO TRAVEL BY ID
+GET http://localhost:8080/travel/oceania/641d0f7399cad3981cbf0c43 HTTP/1.1
