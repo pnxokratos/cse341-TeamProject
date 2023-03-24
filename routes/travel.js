@@ -7,6 +7,8 @@ router.get('/', travelController.getAll);
 
 router.get('/:id', travelController.getSingle);
 
+router.post('/', travelController.createPlace);
+
 //--------------ASIA ROUTES-----------------
 
 //GET ROUTES
@@ -15,6 +17,12 @@ router.get('/:id', travelController.getSingle);
 router.get('/asia/:id', travelController.getAsiaPlace);
 
 //POST ROUTES
+
+router.post('/', travelController.createAsiaPlace);
+router.post('/', travelController.createAmericaPlace);
+router.post('/', travelController.createEuropePlace);
+router.post('/', travelController.createAfricaPlace);
+router.post('/', travelController.createOceaniaPlace);
 
 //PUT ROUTES
 

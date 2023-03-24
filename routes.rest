@@ -2,9 +2,9 @@
 //-----------------
 
 // -------------------------GET ROUTES-----------------------
-### GET ALL CONTACTS
+### GET ALL PLACES
 GET http://localhost:8080/travel HTTP/1.1
-### GET CONTACT BY ID
+### GET PLACE BY ID
 GET http://localhost:8080/travel/641cb7213dd722d614c6d6e3 HTTP/1.1
 
 
@@ -34,4 +34,82 @@ GET http://localhost:8080/travel/europe/641d0b5799cad3981cbf0c41 HTTP/1.1
 
 ### GET PLACE TO TRAVEL BY ID
 GET http://localhost:8080/travel/oceania/641d0f7399cad3981cbf0c43 HTTP/1.1
+
+// -------------------------POST ROUTES-----------------------
+
+### CREATE TRAVEL PLACE ASIA
+POST http://localhost:8080/asia HTTP/1.1
+content-type: application/json
+
+{
+    "place": "YAKISOBA",
+    "continent": "Asia",
+    "country": "Japan",
+    "city": "Tokyo",
+    "activities": "Eat",
+    "admissionCost": "About $5",
+    "bestDateToTravel": "Winter",
+    "suggestion": ""
+}
+
+
+### CREATE TRAVEL PLACE AMERICA
+POST http://localhost:8080/america HTTP/1.1
+content-type: application/json
+
+{
+    "place": "MASP",
+    "continent": "America",
+    "country": "Brasil",
+    "city": "São Paulo",
+    "activities": "Observe and admire art",
+    "admissionCost": "The cost depends on the day but the medium ticket it is like $2",
+    "bestDateToTravel": "March to August",
+    "suggestion": ""
+}
+
+### CREATE TRAVEL PLACE EUROPE
+POST http://localhost:8080/europe HTTP/1.1
+content-type: application/json
+
+{
+    "place": "Eiffel Tour",
+    "continent": "Europe",
+    "country": "France",
+    "city": "Paris",
+    "activities": "Observe and admire art",
+    "admissionCost": "The cost depends on the day but the medium ticket it is like $50",
+    "bestDateToTravel": "March to August",
+    "suggestion": ""
+}
+
+### CREATE TRAVEL PLACE AFRICA
+POST http://localhost:8080/africa HTTP/1.1
+content-type: application/json
+
+{
+    "place": "Zoo",
+    "continent": "Africa",
+    "country": "South Africa",
+    "city": "Namimbi",
+    "activities": "Observe and admire the animals",
+    "admissionCost": "The cost depends on the day but the medium ticket it is like $5",
+    "bestDateToTravel": "March to August",
+    "suggestion": ""
+}
+
+### CREATE TRAVEL PLACE OCEANIA
+POST http://localhost:8080/oceania HTTP/1.1
+content-type: application/json
+
+{
+    "place": "Kangoroo",
+    "continent": "Oceania",
+    "country": "Australia",
+    "city": "Sidney",
+    "activities": "Observe and admire the animals",
+    "admissionCost": "The cost depends on the day but the medium ticket it is like $5",
+    "bestDateToTravel": "March to August",
+    "suggestion": ""
+}
 
