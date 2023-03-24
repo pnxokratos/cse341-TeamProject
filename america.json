@@ -1,0 +1,23 @@
+[
+    {
+        "place": "Machu Picchu",
+        "continent": "America",
+        "country": "Peru",
+        "city": "Cusco",
+        "activities": "hiking",
+        "admissionCost": "If you take the 'Camino Inca' hiking package it's 800$ per person",
+        "bestDateToTravel": "December to April",
+        "suggestion": ""
+    },
+
+    {
+        "place": "Iguaçu Falls",
+        "continent": "America ",
+        "country": "Brazil - Argentina",
+        "city": "Foz do Iguaçu (BRA) - Misiones (ARG)",
+        "activities": "View to the waterfalls, kayak, see the waterfalls in a helicopter.",
+        "admissionCost": "Brasilians and countries of the Mercosur: 23$, other countries: 25$",
+        "bestDateToTravel": "Between september and february",
+        "suggestion": ""
+    }
+]

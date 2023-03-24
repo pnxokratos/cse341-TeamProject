@@ -8,6 +8,13 @@ GET http://localhost:8080/travel HTTP/1.1
 GET http://localhost:8080/travel/641cb7213dd722d614c6d6e3 HTTP/1.1
 
 
-// -----------------------------ASIA COLLECTION-------------------
-### GET PLACE TO TRAVEL BY ID (ASIA COLLECTION)
+// ---------------ASIA COLLECTION-------------------
+
+### GET PLACE TO TRAVEL BY ID 
 GET http://localhost:8080/travel/asia/641ce67999cad3981cbf0c34 HTTP/1.1
+
+
+// -------------AMERICA COLLECTION----------------
+
+### GET PLACE TO TRAVEL BY ID
+GET http://localhost:8080/travel/america/641ceb4399cad3981cbf0c39 HTTP/1.1

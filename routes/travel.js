@@ -14,4 +14,12 @@ router.get('/:id', travelController.getSingle);
 //GET place to visit by id
 router.get('/asia/:id', travelController.getAsiaPlace);
 
+
+//AMERICA ROUTES
+
+//GET ROUTES
+
+//GET place to visit by id
+router.get('/america/:id', travelController.getAmericaPlace)
+
 module.exports = router;
