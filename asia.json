@@ -1,0 +1,45 @@
+ [
+    {
+        "place": "Great Wall of China",
+        "continent": "Asia",
+        "country": "China",
+        "city": "Pekín",
+        "activities": "hiking",
+        "admissionCost": "6.60 $",
+        "bestDateToTravel": "Spring (april-may) and Autumn (september-novemember)",
+        "suggestion": ""
+    },
+
+    {
+        "place": "Petra",
+        "continent": "Asia",
+        "country": "Jordan",
+        "city": "Ma'an Governorate",
+        "activities": "cultural tourism",
+        "admissionCost": "1 day: 70.48$, 2 days: 77.53$ and for 3 days: 84.58$",
+        "bestDateToTravel": "Between september and february",
+        "suggestion": ""
+    },
+
+    {
+        "place": "Gardens by the Bay",
+        "continent": "Asia",
+        "country": "Singapure",
+        "city": "Marina South",
+        "activities": "parks activities: cloud forest, flower dome, floral fantasy; night show with lights, diferents parks to visit.",
+        "admissionCost": "adults: 8$ & childrens (3-12 years old): 5$",
+        "bestDateToTravel": "Between september and february",
+        "suggestion": ""
+    },
+
+    {
+        "place": "Taj Mahal",
+        "continent": "Asia",
+        "country": "India",
+        "city": "Agra",
+        "activities": "cultural tourism, visit the mausoleum of Arjumand Banu Begum, know as Mumtaz mahal",
+        "admissionCost": "13.5$ to enter and 2.75$ if you wan to visit the main mausoleum",
+        "bestDateToTravel": "Between october and march",
+        "suggestion": ""
+    }
+]
