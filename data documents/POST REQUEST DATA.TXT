@@ -1,0 +1,63 @@
+AFRICA 
+
+{
+        "place": "Sabi Sands Game Reserve",
+        "continent": "Africa",
+        "country": "South Africa",
+        "city": "Kruger",
+        "activities": "Safari",
+        "admissionCost": "770$ per person per night",
+        "bestDateToTravel": "From December to March ",
+        "suggestion": ""
+}
+
+
+AMERICA
+
+{
+        "place": "Chichen Itza",
+        "continent": "America",
+        "country": "Mexico",
+        "city": "Yucatan",
+        "activities": "Cultural Tourism",
+        "admissionCost": "23$ per person",
+        "bestDateToTravel": "From March to May ",
+        "suggestion": ""
+}
+
+ASIA 
+
+{
+        "place": "Mount Fuji",
+        "continent": "Asia",
+        "country": "Japan",
+        "city": "Honshu island",
+        "activities": "Cultural Tourism, hiking",
+        "admissionCost": "free",
+        "bestDateToTravel": "From July to August ",
+        "suggestion": ""
+}
+
+EUROPE 
+{
+        "place": "Louvre",
+        "continent": "Europe",
+        "country": "France",
+        "city": "Paris",
+        "activities": "Cultural Tourism,",
+        "admissionCost": "18$",
+        "bestDateToTravel": "From April to June ",
+        "suggestion": ""
+}
+
+OCEANIA
+{
+        "place": "Australia Desert",
+        "continent": "Oceania",
+        "country": "Australia",
+        "city": "-",
+        "activities": "Safari",
+        "admissionCost": "-",
+        "bestDateToTravel": "From June to August ",
+        "suggestion": ""
+}
