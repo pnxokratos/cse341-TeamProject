@@ -5,7 +5,8 @@ const doc = {
     title: 'Final Project API',
     description: 'TravelWish API'
   },
-  host: 'localhost:8080',
+  host: 'https://team-15-project.onrender.com',
+  //host: 'localhost:8080',
   schemes: ['http']
 };
 

@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Final Project API",
+    "title": "TravelWish",
     "description": "TravelWish API",
     "version": "1.0.0"
   },
