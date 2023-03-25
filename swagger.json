@@ -5,10 +5,10 @@
     "description": "TravelWish API",
     "version": "1.0.0"
   },
-  "host": "https://team-15-project.onrender.com",
+  "host": "team-15-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/travel/": {
