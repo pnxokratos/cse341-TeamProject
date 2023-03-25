@@ -7,7 +7,7 @@ router.get('/', travelController.getAll);
 
 router.get('/:id', travelController.getSingle);
 
-router.post('/', travelController.createPlace);
+router.post('/', travelController.postPlace);
 
 //--------------ASIA ROUTES-----------------
 
@@ -17,12 +17,7 @@ router.post('/', travelController.createPlace);
 router.get('/asia/:id', travelController.getAsiaPlace);
 
 //POST ROUTES
-
-router.post('/', travelController.createAsiaPlace);
-router.post('/', travelController.createAmericaPlace);
-router.post('/', travelController.createEuropePlace);
-router.post('/', travelController.createAfricaPlace);
-router.post('/', travelController.createOceaniaPlace);
+router.post('/asia', travelController.postAsiaPlace);
 
 //PUT ROUTES
 
@@ -39,6 +34,7 @@ router.get('/america/:id', travelController.getAmericaPlace);
 
 
 //POST ROUTES
+router.post('/america', travelController.postAmericaPlace);
 
 //PUT ROUTES
 
@@ -54,6 +50,7 @@ router.get('/america/:id', travelController.getAmericaPlace);
 router.get('/africa/:id', travelController.getAfricaPlace);
 
 //POST ROUTES
+router.post('/africa', travelController.postAfricaPlace);
 
 //PUT ROTES
 
@@ -68,6 +65,7 @@ router.get('/africa/:id', travelController.getAfricaPlace);
 router.get('/europe/:id', travelController.getEuropePlace);
 
 //POST ROUTES
+router.post('/europe', travelController.postEuropePlace);
 
 //PUT ROTES
 
@@ -83,6 +81,7 @@ router.get('/europe/:id', travelController.getEuropePlace);
 router.get('/oceania/:id', travelController.getOceaniaPlace);
 
 //POST ROUTES
+router.post('/oceania', travelController.postOceaniaPlace);
 
 //PUT ROTES
 

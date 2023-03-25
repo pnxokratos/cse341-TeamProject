@@ -29,7 +29,7 @@ const getSingle = async (req, res, next) => {
 };
 
 // POST - CREATION PLACES
-const createPlace = async (req, res) => {
+const postPlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -40,7 +40,7 @@ const createPlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('travel').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('travel').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -68,7 +68,7 @@ const getAsiaPlace = async (req, res, next) => {
 }
 
 // POST - CREATION ASIA PLACES
-const createAsiaPlace = async (req, res) => {
+const postAsiaPlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -79,7 +79,7 @@ const createAsiaPlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('asia').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('asia').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -109,7 +109,7 @@ const getAmericaPlace = async (req, res, next) => {
 }
 
 // POST - CREATION AMERICA PLACES
-const createAmericaPlace = async (req, res) => {
+const postAmericaPlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -120,7 +120,7 @@ const createAmericaPlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('america').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('america').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -149,7 +149,7 @@ const getAfricaPlace = async (req, res, next) => {
 }
 
 // POST - CREATION AFRICA PLACES
-const createAfricaPlace = async (req, res) => {
+const postAfricaPlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -160,7 +160,7 @@ const createAfricaPlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('africa').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('africa').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -188,7 +188,7 @@ const getEuropePlace = async (req, res, next) => {
 }
 
 // POST - CREATION EUROPE PLACES
-const createEuropePlace = async (req, res) => {
+const postEuropePlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -199,7 +199,7 @@ const createEuropePlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('europe').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('europe').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -226,8 +226,8 @@ const getOceaniaPlace = async (req, res, next) => {
   });
 }
 
-// POST - CREATION ASIA PLACES
-const createOceaniaPlace = async (req, res) => {
+// POST - CREATION OCEANIA PLACES
+const postOceaniaPlace = async (req, res) => {
   const place = {
     place: req.body.place,
     continent: req.body.continent,
@@ -238,7 +238,7 @@ const createOceaniaPlace = async (req, res) => {
     bestDateToTravel: req.body.bestDateToTravel,
     suggestion: req.body.suggestion
   };
-  const response = await mongodb.getDb().db().collection('oceania').insertOne(place);
+  const response = await mongodb.getDb().db('TravelWish').collection('oceania').insertOne(place);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -246,4 +246,4 @@ const createOceaniaPlace = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getSingle, getAsiaPlace, getAmericaPlace, getEuropePlace, getAfricaPlace, getOceaniaPlace, createPlace, createAsiaPlace, createAmericaPlace, createEuropePlace, createAfricaPlace, createOceaniaPlace };
+module.exports = { getAll, getSingle, getAsiaPlace, getAmericaPlace, getEuropePlace, getAfricaPlace, getOceaniaPlace, postPlace, postAsiaPlace, postAmericaPlace, postEuropePlace, postAfricaPlace, postOceaniaPlace };

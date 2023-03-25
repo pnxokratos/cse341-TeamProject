@@ -5,7 +5,7 @@
 ### GET ALL PLACES
 GET http://localhost:8080/travel HTTP/1.1
 ### GET PLACE BY ID
-GET http://localhost:8080/travel/641cb7213dd722d614c6d6e3 HTTP/1.1
+GET http://localhost:8080/travel/641cbc723dd722d614f803a3 HTTP/1.1
 
 
 // ---------------ASIA COLLECTION-------------------
@@ -37,8 +37,10 @@ GET http://localhost:8080/travel/oceania/641d0f7399cad3981cbf0c43 HTTP/1.1
 
 // -------------------------POST ROUTES-----------------------
 
+// ---------------ASIA COLLECTION-------------------
+
 ### CREATE TRAVEL PLACE ASIA
-POST http://localhost:8080/asia HTTP/1.1
+POST http://localhost:8080/travel/asia HTTP/1.1
 content-type: application/json
 
 {
@@ -52,9 +54,10 @@ content-type: application/json
     "suggestion": ""
 }
 
+// -------------AMERICA COLLECTION----------------
 
 ### CREATE TRAVEL PLACE AMERICA
-POST http://localhost:8080/america HTTP/1.1
+POST http://localhost:8080/travel/america HTTP/1.1
 content-type: application/json
 
 {
@@ -68,12 +71,14 @@ content-type: application/json
     "suggestion": ""
 }
 
+// --------------EUROPE COLLECTION ------------------
+
 ### CREATE TRAVEL PLACE EUROPE
-POST http://localhost:8080/europe HTTP/1.1
+POST http://localhost:8080/travel/europe HTTP/1.1
 content-type: application/json
 
 {
-    "place": "Eiffel Tour",
+    "place": "Eiffel Tower",
     "continent": "Europe",
     "country": "France",
     "city": "Paris",
@@ -83,8 +88,10 @@ content-type: application/json
     "suggestion": ""
 }
 
+// --------------AFRICA COLLECTION -------------------
+
 ### CREATE TRAVEL PLACE AFRICA
-POST http://localhost:8080/africa HTTP/1.1
+POST http://localhost:8080/travel/africa HTTP/1.1
 content-type: application/json
 
 {
@@ -98,8 +105,10 @@ content-type: application/json
     "suggestion": ""
 }
 
+// --------------OCEANIA COLLECTION-------------------
+
 ### CREATE TRAVEL PLACE OCEANIA
-POST http://localhost:8080/oceania HTTP/1.1
+POST http://localhost:8080/travel/oceania HTTP/1.1
 content-type: application/json
 
 {
