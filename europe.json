@@ -1,0 +1,45 @@
+{
+    "europe": {
+        "place": "Coliseum",
+        "continent": "Europe",
+        "country": "Italy",
+        "city": "Rome",
+        "activities": "cultural tourism, tours",
+        "admissionCost": "26$",
+        "bestDateToTravel": "May to September",
+        "suggestion": ""
+    },
+
+    "europe2": {
+        "place": "Monte Vesuvius",
+        "continent": "Europe",
+        "country": "Italy",
+        "city": "Pompei",
+        "activities": "cultural tourism, tours for example go to the crater volcano",
+        "admissionCost": "Cost to go to the crater volcano: 10.83$",
+        "bestDateToTravel": "June to September",
+        "suggestion": ""
+    },
+
+    "europe3": {
+        "place": "Eiffel Tower",
+        "continent": "Europe",
+        "country": "France",
+        "city": "Paris",
+        "activities": "cultural tourism, tours",
+        "admissionCost": "18.40$",
+        "bestDateToTravel": "June to September",
+        "suggestion": ""
+    },
+
+    "europe4": {
+        "place": "The Anne Frank House",
+        "continent": "Europe",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "activities": "cultural tourism, tours",
+        "admissionCost": "Adults: 17.32$, 10-17 yrs old: 7.58$ and 0-9: 1.08$",
+        "bestDateToTravel": "June to September",
+        "suggestion": ""
+    }
+}

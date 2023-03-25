@@ -5,8 +5,9 @@ const doc = {
     title: 'Final Project API',
     description: 'TravelWish API'
   },
-  host: 'localhost:8080',
-  schemes: ['http']
+  host: 'team-15-project.onrender.com',
+  //host: 'localhost:8080',
+  schemes: ['https'] 
 };
 
 const outputFile = './swagger.json';

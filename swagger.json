@@ -5,13 +5,13 @@
     "description": "TravelWish API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "team-15-project.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
-    "/travel/": {
+    "/asia/": {
       "get": {
         "description": "",
         "produces": [
@@ -23,9 +23,55 @@
             "description": "OK"
           }
         }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
-    "/travel/{id}": {
+    "/asia/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -49,7 +95,67 @@
         }
       }
     },
-    "/travel/asia/{id}": {
+    "/africa/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/africa/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -73,7 +179,67 @@
         }
       }
     },
-    "/travel/america/{id}": {
+    "/america/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/america/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -97,7 +263,67 @@
         }
       }
     },
-    "/travel/africa/{id}": {
+    "/europe/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/europe/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -121,31 +347,67 @@
         }
       }
     },
-    "/travel/europe/{id}": {
+    "/oceania/": {
       "get": {
         "description": "",
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
           },
-          "400": {
-            "description": "Bad Request"
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
     },
-    "/travel/oceania/{id}": {
+    "/oceania/{id}": {
       "get": {
         "description": "",
         "produces": [

@@ -14,6 +14,7 @@ router.post('/', travelController.postPlace);
 //GET ROUTES
 
 //GET place to visit by id
+/*
 router.get('/asia/:id', travelController.getAsiaPlace);
 
 //POST ROUTES
@@ -86,6 +87,6 @@ router.post('/oceania', travelController.postOceaniaPlace);
 //PUT ROTES
 
 //DELETE ROUTES
-
+*/
 
 module.exports = router;
