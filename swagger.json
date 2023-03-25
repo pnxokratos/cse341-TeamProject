@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Final Project API",
+    "title": "TravelWish",
     "description": "TravelWish API",
     "version": "1.0.0"
   },
@@ -179,6 +179,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/america/": {
       "get": {
         "description": "",
@@ -192,6 +193,9 @@
           }
         }
       },
+=======
+    "/travel/asia": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "post": {
         "description": "",
         "parameters": [
@@ -239,7 +243,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "/america/{id}": {
+=======
+    "/travel/america/{id}": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "get": {
         "description": "",
         "produces": [
@@ -263,6 +271,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/europe/": {
       "get": {
         "description": "",
@@ -276,6 +285,9 @@
           }
         }
       },
+=======
+    "/travel/america": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "post": {
         "description": "",
         "parameters": [
@@ -323,7 +335,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "/europe/{id}": {
+=======
+    "/travel/africa/{id}": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "get": {
         "description": "",
         "produces": [
@@ -347,7 +363,59 @@
         }
       }
     },
+<<<<<<< HEAD
     "/oceania/": {
+=======
+    "/travel/africa": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/travel/europe/{id}": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "get": {
         "description": "",
         "produces": [
@@ -407,7 +475,59 @@
         }
       }
     },
+<<<<<<< HEAD
     "/oceania/{id}": {
+=======
+    "/travel/europe": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/travel/oceania/{id}": {
+>>>>>>> 8cfe791f17dfcf0c8add42d9dd4d1042c7f08034
       "get": {
         "description": "",
         "produces": [
@@ -427,6 +547,54 @@
           },
           "400": {
             "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/travel/oceania": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "place": {
+                  "example": "any"
+                },
+                "continent": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "activities": {
+                  "example": "any"
+                },
+                "admissionCost": {
+                  "example": "any"
+                },
+                "bestDateToTravel": {
+                  "example": "any"
+                },
+                "suggestion": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
