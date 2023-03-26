@@ -11,36 +11,36 @@ GET http://localhost:8080/travel/641cbc723dd722d614f803a3 HTTP/1.1
 // ---------------ASIA COLLECTION-------------------
 
 ### GET PLACE TO TRAVEL BY ID 
-GET http://localhost:8080/travel/asia/641ce67999cad3981cbf0c34 HTTP/1.1
+GET http://localhost:8080/asia/641ce67999cad3981cbf0c34 HTTP/1.1
 
 
 // -------------AMERICA COLLECTION----------------
 
 ### GET PLACE TO TRAVEL BY ID
-GET http://localhost:8080/travel/america/641ceb4399cad3981cbf0c39 HTTP/1.1
+GET http://localhost:8080/america/641ceb4399cad3981cbf0c39 HTTP/1.1
 
 // --------------AFRICA COLLECTION -------------------
 
 ### GET PLACE TO TRAVEL BY ID
-GET http://localhost:8080/travel/africa/641d10ee99cad3981cbf0c45 HTTP/1.1
+GET http://localhost:8080/africa/641d10ee99cad3981cbf0c45 HTTP/1.1
 // --------------EUROPE COLLECTION ------------------
 
 ### GET PLACE TO TRAVEL BY ID
 
-GET http://localhost:8080/travel/europe/641d0b5799cad3981cbf0c41 HTTP/1.1
+GET http://localhost:8080/europe/641d0b5799cad3981cbf0c41 HTTP/1.1
 
 
 // --------------OCEANIA COLLECTION-------------------
 
 ### GET PLACE TO TRAVEL BY ID
-GET http://localhost:8080/travel/oceania/641d0f7399cad3981cbf0c43 HTTP/1.1
+GET http://localhost:8080/oceania/641d0f7399cad3981cbf0c43 HTTP/1.1
 
 // -------------------------POST ROUTES-----------------------
 
 // ---------------ASIA COLLECTION-------------------
 
 ### CREATE TRAVEL PLACE ASIA
-POST http://localhost:8080/travel/asia HTTP/1.1
+POST http://localhost:8080/asia HTTP/1.1
 content-type: application/json
 
 {
@@ -74,7 +74,7 @@ content-type: application/json
 // --------------EUROPE COLLECTION ------------------
 
 ### CREATE TRAVEL PLACE EUROPE
-POST http://localhost:8080/travel/europe HTTP/1.1
+POST http://localhost:8080/europe HTTP/1.1
 content-type: application/json
 
 {
@@ -91,7 +91,7 @@ content-type: application/json
 // --------------AFRICA COLLECTION -------------------
 
 ### CREATE TRAVEL PLACE AFRICA
-POST http://localhost:8080/travel/africa HTTP/1.1
+POST http://localhost:8080/africa HTTP/1.1
 content-type: application/json
 
 {
@@ -108,7 +108,7 @@ content-type: application/json
 // --------------OCEANIA COLLECTION-------------------
 
 ### CREATE TRAVEL PLACE OCEANIA
-POST http://localhost:8080/travel/oceania HTTP/1.1
+POST http://localhost:8080/oceania HTTP/1.1
 content-type: application/json
 
 {
@@ -122,3 +122,6 @@ content-type: application/json
     "suggestion": ""
 }
 
+
+###
+GET https://team-15-project.onrender.com/  HTTP/1.1
