@@ -95,7 +95,7 @@ POST http://localhost:8080/travel/africa HTTP/1.1
 content-type: application/json
 
 {
-    "place": "Zoo",
+    "place": 123,
     "continent": "Africa",
     "country": "South Africa",
     "city": "Namimbi",
