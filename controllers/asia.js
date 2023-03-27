@@ -52,4 +52,16 @@ const postAsiaPlace = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getAsiaPlace, postAsiaPlace};
+// DELETE - DELETE ASIA PLACES
+const deleteAsiaPlace = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const response = await mongodb.getDb().db('TravelWish').collection('asia').deleteOne({ _id: userId }, true);
+  console.log(response);
+  if (response.deletedCount > 0) {
+    res.status(200).send();
+  } else {
+    res.status(500).json(response.error || 'Some error occurred while deleting the place.');
+  }
+};
+
+module.exports = { getAll, getAsiaPlace, postAsiaPlace, deleteAsiaPlace};

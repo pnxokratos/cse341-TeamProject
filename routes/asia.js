@@ -9,4 +9,6 @@ router.get('/:id', asiaController.getAsiaPlace);
 
 router.post('/', asiaController.postAsiaPlace);
 
+router.detele('/', asiaController.deleteAsiaPlace);
+
 module.exports = router;

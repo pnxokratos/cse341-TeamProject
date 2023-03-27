@@ -9,4 +9,6 @@ router.get('/:id', oceaniaController.getOceaniaPlace);
 
 router.post('/', oceaniaController.postOceaniaPlace);
 
+router.delete('/', oceaniaController.deleteOceaniaPlace);
+
 module.exports = router;

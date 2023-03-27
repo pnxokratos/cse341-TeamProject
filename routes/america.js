@@ -9,4 +9,6 @@ router.get('/:id', americaController.getAmericaPlace);
 
 router.post('/', americaController.postAmericaPlace);
 
+router.delete('/', americaController.deleteAmericaPlace);
+
 module.exports = router;

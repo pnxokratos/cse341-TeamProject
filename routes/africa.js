@@ -10,4 +10,6 @@ router.get('/:id', africaController.getAfricaPlace);
 
 router.post('/', validation.validateCreatePlace, africaController.postAfricaPlace);
 
+router.delete('/', africaController.deleteAfricaPlace);
+
 module.exports = router;

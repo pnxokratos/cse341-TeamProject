@@ -53,4 +53,16 @@ const postAfricaPlace = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getAfricaPlace, postAfricaPlace };
+
+// DELETE - DELETE AFRICA PLACES
+const deleteAfricaPlace = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const response = await mongodb.getDb().db('TravelWish').collection('africa').deleteOne({ _id: userId }, true);
+  console.log(response);
+  if (response.deletedCount > 0) {
+    res.status(200).send();
+  } else {
+    res.status(500).json(response.error || 'Some error occurred while deleting the place.');
+  }
+};
+module.exports = { getAll, getAfricaPlace, postAfricaPlace, deleteAfricaPlace };
