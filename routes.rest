@@ -125,3 +125,6 @@ content-type: application/json
 
 ###
 GET https://team-15-project.onrender.com/  HTTP/1.1
+
+###
+DELETE http://localhost:8080/asia/641f98c9c01720ef33c28236 HTTP/1.1

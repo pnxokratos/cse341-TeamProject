@@ -9,6 +9,6 @@ router.get('/:id', europeController.getEuropePlace);
 
 router.post('/', europeController.postEuropePlace);
 
-router.delete('/', europeController.deleteEuropePlace);
+router.delete('/:id', europeController.deleteEuropePlace);
 
 module.exports = router;
