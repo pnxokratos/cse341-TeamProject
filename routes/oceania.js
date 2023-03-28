@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const {requiresAuth } = require('express-openid-connect');
 
 const oceaniaController = require('../controllers/oceania');
 
-router.get('/', oceaniaController.getAll);
+router.get('/', requiresAuth(), oceaniaController.getAll);
 
-router.get('/:id', oceaniaController.getOceaniaPlace);
+router.get('/:id', requiresAuth(), oceaniaController.getOceaniaPlace);
 
-router.post('/', oceaniaController.postOceaniaPlace);
+router.post('/', requiresAuth(), oceaniaController.postOceaniaPlace);
 
-router.delete('/:id', oceaniaController.deleteOceaniaPlace);
+router.delete('/:id', requiresAuth(), oceaniaController.deleteOceaniaPlace);
 
 module.exports = router;

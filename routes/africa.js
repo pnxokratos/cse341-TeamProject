@@ -1,15 +1,16 @@
 const express = require('express');
 const router = express.Router();
+const {requiresAuth } = require('express-openid-connect');
 
 const africaController = require('../controllers/africa');
 const validation = require('../middleware/validate');
 
-router.get('/', africaController.getAll);
+router.get('/', requiresAuth(), africaController.getAll);
 
-router.get('/:id', africaController.getAfricaPlace);
+router.get('/:id', requiresAuth(), africaController.getAfricaPlace);
 
-router.post('/', validation.validateCreatePlace, africaController.postAfricaPlace);
+router.post('/', requiresAuth(), validation.validateCreatePlace, africaController.postAfricaPlace);
 
-router.delete('/:id', africaController.deleteAfricaPlace);
+router.delete('/:id', requiresAuth(), africaController.deleteAfricaPlace);
 
 module.exports = router;

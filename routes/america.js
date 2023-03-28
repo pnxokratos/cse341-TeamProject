@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const {requiresAuth } = require('express-openid-connect');
 
 const americaController = require('../controllers/america');
 
-router.get('/', americaController.getAll);
+router.get('/', requiresAuth(), americaController.getAll);
 
-router.get('/:id', americaController.getAmericaPlace);
+router.get('/:id', requiresAuth(), americaController.getAmericaPlace);
 
-router.post('/', americaController.postAmericaPlace);
+router.post('/', requiresAuth(), americaController.postAmericaPlace);
 
-router.delete('/:id', americaController.deleteAmericaPlace);
+router.delete('/:id', requiresAuth(), americaController.deleteAmericaPlace);
 
 module.exports = router;
