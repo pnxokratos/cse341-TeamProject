@@ -2,12 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 const travelController = require('../controllers/travel');
+const validation = require('../middleware/validate');
 
 router.get('/', travelController.getAll);
 
 router.get('/:id', travelController.getSingle);
 
-router.post('/', travelController.postPlace);
+router.post('/', validation.validateCreatePlace, travelController.postPlace);
 
 //--------------ASIA ROUTES-----------------
 
