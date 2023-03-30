@@ -11,6 +11,8 @@ router.get('/:id', requiresAuth(), africaController.getAfricaPlace);
 
 router.post('/', requiresAuth(), validation.validateCreatePlace, africaController.postAfricaPlace);
 
+router.put('/:id', validation.validateCreatePlace, africaController.updateAfrica);
+
 router.delete('/:id', requiresAuth(), africaController.deleteAfricaPlace);
 
 module.exports = router;

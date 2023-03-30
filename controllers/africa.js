@@ -65,6 +65,33 @@ const postAfricaPlace = async (req, res) => {
   }
 };
 
+// PUT - UPDATES SUGGESTIONS
+
+const updateAfrica = async (req, res, next) => {
+  if (ObjectId.isValid(req.id)) {
+    return res.status(400).send("Invalid object id");
+  }
+  const userId = new ObjectId(req.params.id);
+  const africa = {
+    suggestion: req.body.suggestion
+  };
+  try {
+    const response = await mongodb
+      .getDb()
+      .db("TravelWish")
+      .collection("africa")
+      .replaceOne({ _id: userId }, africa);
+    console.log(response);
+    if (response.modifiedCount > 0) {
+      res.status(204).send();
+    }
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: (response.error || "Some error occurred while updating suggestions.")
+    })
+  }
+};
 
 // DELETE - DELETE AFRICA PLACES
 const deleteAfricaPlace = async (req, res) => {
@@ -81,4 +108,4 @@ const deleteAfricaPlace = async (req, res) => {
   res.status(500).json(err);
 }
 };
-module.exports = { getAll, getAfricaPlace, postAfricaPlace, deleteAfricaPlace };
+module.exports = { getAll, getAfricaPlace, postAfricaPlace, updateAfrica, deleteAfricaPlace };
