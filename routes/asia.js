@@ -11,6 +11,8 @@ router.get('/:id', requiresAuth(), asiaController.getAsiaPlace);
 
 router.post('/', requiresAuth(), validation.validateCreatePlace, asiaController.postAsiaPlace);
 
+router.put('/:id', validation.validateCreatePlace, asiaController.updateAsia);
+
 router.delete('/:id', requiresAuth(), asiaController.deleteAsiaPlace);
 
 module.exports = router;

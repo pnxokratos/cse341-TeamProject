@@ -11,6 +11,8 @@ router.get('/:id', requiresAuth(), oceaniaController.getOceaniaPlace);
 
 router.post('/', requiresAuth(), validation.validateCreatePlace, oceaniaController.postOceaniaPlace);
 
+router.put('/:id', validation.validateCreatePlace, oceaniaController.updateOceania);
+
 router.delete('/:id', requiresAuth(), oceaniaController.deleteOceaniaPlace);
 
 module.exports = router;

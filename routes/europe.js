@@ -11,6 +11,8 @@ router.get('/:id', requiresAuth(), europeController.getEuropePlace);
 
 router.post('/', requiresAuth(), validation.validateCreatePlace, europeController.postEuropePlace);
 
+router.put('/:id', validation.validateCreatePlace, europeController.updateEurope);
+
 router.delete('/:id', requiresAuth(), europeController.deleteEuropePlace);
 
 module.exports = router;

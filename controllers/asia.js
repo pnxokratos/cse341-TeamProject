@@ -64,6 +64,34 @@ const postAsiaPlace = async (req, res) => {
 }
 };
 
+// PUT - UPDATES SUGGESTIONS
+
+const updateAsia = async (req, res, next) => {
+  if (ObjectId.isValid(req.id)) {
+    return res.status(400).send("Invalid object id");
+  }
+  const userId = new ObjectId(req.params.id);
+  const asia = {
+    suggestion: req.body.suggestion
+  };
+  try {
+    const response = await mongodb
+      .getDb()
+      .db("TravelWish")
+      .collection("asia")
+      .replaceOne({ _id: userId }, asia);
+    console.log(response);
+    if (response.modifiedCount > 0) {
+      res.status(204).send();
+    }
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: (response.error || "Some error occurred while updating suggestions.")
+    })
+  }
+};
+
 // DELETE - DELETE ASIA PLACES
 const deleteAsiaPlace = async (req, res) => {
   try{
@@ -80,4 +108,4 @@ const deleteAsiaPlace = async (req, res) => {
 }
 };
 
-module.exports = { getAll, getAsiaPlace, postAsiaPlace, deleteAsiaPlace};
+module.exports = { getAll, getAsiaPlace, postAsiaPlace, updateAsia, deleteAsiaPlace};
