@@ -24,6 +24,24 @@ const validateCreatePlace = (req, res, next) => {
     });
   };
 
+const validateChangeSuggestion = (req, res, next) => {
+    const validationRule = {
+        suggestion: 'required|string'
+    };
+    validator(req.body, validationRule, {}, (err, status) => {
+      if (!status) {
+        res.status(412).send({
+          success: false,
+          message: 'Validation failed, please enter de correct data',
+          data: err
+        });
+      } else {
+        next();
+      }
+    });
+  };
+
 module.exports = {
-    validateCreatePlace
+    validateCreatePlace,
+    validateChangeSuggestion
 };

@@ -11,7 +11,7 @@ router.get('/:id', requiresAuth(), europeController.getEuropePlace);
 
 router.post('/', requiresAuth(), validation.validateCreatePlace, europeController.postEuropePlace);
 
-router.put('/:id', validation.validateCreatePlace, europeController.updateEurope);
+router.put('/:id', validation.validateChangeSuggestion, europeController.updateEurope);
 
 router.delete('/:id', requiresAuth(), europeController.deleteEuropePlace);
 
