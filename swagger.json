@@ -100,10 +100,10 @@
       }
     },
     "/asia/{id}": {
-      "tags": [
-        "Asia"
-      ],
       "get": {
+        "tags": [
+          "Asia"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -190,6 +190,9 @@
     },
     "/africa/": {
       "get": {
+        "tags": [
+          "Africa"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -202,6 +205,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Africa"
+        ],
         "description": "",
         "parameters": [
           {
@@ -253,6 +259,9 @@
     },
     "/africa/{id}": {
       "get": {
+        "tags": [
+          "Africa"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -315,6 +324,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Africa"
+        ],
         "description": "",
         "parameters": [
           {
@@ -336,6 +348,9 @@
     },
     "/america/": {
       "get": {
+        "tags": [
+          "America"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -348,6 +363,9 @@
         }
       },
       "post": {
+        "tags": [
+          "America"
+        ],
         "description": "",
         "parameters": [
           {
@@ -396,6 +414,9 @@
     },
     "/america/{id}": {
       "get": {
+        "tags": [
+          "America"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -458,6 +479,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "America"
+        ],
         "description": "",
         "parameters": [
           {
@@ -479,6 +503,9 @@
     },
     "/europe/": {
       "get": {
+        "tags": [
+          "Europe"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -491,6 +518,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Europe"
+        ],
         "description": "",
         "parameters": [
           {
@@ -539,6 +569,9 @@
     },
     "/europe/{id}": {
       "get": {
+        "tags": [
+          "Europe"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -601,6 +634,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Europe"
+        ],
         "description": "",
         "parameters": [
           {
@@ -622,6 +658,9 @@
     },
     "/oceania/": {
       "get": {
+        "tags": [
+          "Oceania"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -634,6 +673,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Oceania"
+        ],
         "description": "",
         "parameters": [
           {
@@ -682,6 +724,9 @@
     },
     "/oceania/{id}": {
       "get": {
+        "tags": [
+          "Oceania"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -744,6 +789,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Oceania"
+        ],
         "description": "",
         "parameters": [
           {
