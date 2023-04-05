@@ -34,6 +34,9 @@
       }
     },
     "/asia/": {
+      "tags": [
+        "Asia"
+      ],
       "get": {
         "description": "",
         "produces": [
@@ -47,6 +50,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Asia"
+        ],
         "description": "",
         "parameters": [
           {
@@ -94,6 +100,9 @@
       }
     },
     "/asia/{id}": {
+      "tags": [
+        "Asia"
+      ],
       "get": {
         "description": "",
         "produces": [
@@ -157,6 +166,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Asia"
+        ],
         "description": "",
         "parameters": [
           {
