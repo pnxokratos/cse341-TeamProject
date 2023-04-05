@@ -1,3 +1,4 @@
+const request = require('supertest');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
@@ -18,11 +19,11 @@ const config = {
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.status(200);
     next();
   })
 
-  // auth router attaches /login, /logout, and /callback routes to the baseURL
   .use(auth(config))
   .use('/', require('./routes'));
 
