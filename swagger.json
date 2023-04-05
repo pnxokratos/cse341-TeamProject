@@ -34,10 +34,10 @@
       }
     },
     "/asia/": {
-      "tags": [
-        "Asia"
-      ],
       "get": {
+        "tags": [
+          "Asia"
+        ],
         "description": "",
         "produces": [
           "application/json"
