@@ -72,7 +72,9 @@ const updateOceania = async (req, res, next) => {
   }
   const userId = new ObjectId(req.params.id);
   const oceania = {
-    suggestion: req.body.suggestion
+    $set: {
+      suggestion: req.body.suggestion,
+   },
   };
   try {
     const response = await mongodb
