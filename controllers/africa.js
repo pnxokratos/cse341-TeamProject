@@ -80,7 +80,7 @@ const updateAfrica = async (req, res, next) => {
       .getDb()
       .db("TravelWish")
       .collection("africa")
-      .replaceOne({ _id: userId }, africa);
+      .updateOne({ _id: userId }, africa);
     console.log(response);
     if (response.modifiedCount > 0) {
       res.status(204).send();
